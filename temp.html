@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculate me! - A calculator made by me</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="utils.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <header>
+    <h1 class="text-center">Welcome to My Calculator!</h1>
+  </header>
+  
+  <section class="container flex flex-col items-center mx-auto m-w-20">
+    <div class="calculator">
+      <!-- Display screen -->
+      <div class="row">
+        <input class="input" type="text" id="display" aria-label="Calculator Display" placeholder="0" disabled />
+      </div>
+      
+      <!-- Control buttons -->
+      <div class="row">
+        <button class="button bc" aria-label="Clear">C</button>
+        <button class="button b2" aria-label="Percentage">%</button>
+        <button class="button b2" aria-label="Memory Add">M+</button>
+        <button class="button b2" aria-label="Memory Subtract">M-</button>
+      </div>
+
+      <!-- Number and operator buttons -->
+      <div class="row">
+        <button class="button b1" aria-label="Number 7">7</button>
+        <button class="button b1" aria-label="Number 8">8</button>
+        <button class="button b1" aria-label="Number 9">9</button>
+        <button class="button b2" aria-label="Multiply">*</button>
+      </div>
+
+      <div class="row">
+        <button class="button b1" aria-label="Number 4">4</button>
+        <button class="button b1" aria-label="Number 5">5</button>
+        <button class="button b1" aria-label="Number 6">6</button>
+        <button class="button b2" aria-label="Divide">/</button>
+      </div>
+
+      <div class="row">
+        <button class="button b1" aria-label="Number 1">1</button>
+        <button class="button b1" aria-label="Number 2">2</button>
+        <button class="button b1" aria-label="Number 3">3</button>
+        <button class="button b2" aria-label="Add">+</button>
+      </div>
+
+      <div class="row">
+        <button class="button b1" aria-label="Number 0">0</button>
+        <button class="button b2" aria-label="Decimal Point">.</button>
+        <button class="button b3" id="equals" aria-label="Equals">=</button>
+        <button class="button b2" aria-label="Subtract">-</button>
+      </div>
+    </div>
+
+    <!-- Responsive Image Grid -->
+    <div class="image-grid">
+      <div class="image-item">
+        <img src="https://via.placeholder.com/150" alt="Image 1" class="image" />
+      </div>
+      <div class="image-item">
+        <img src="https://via.placeholder.com/150" alt="Image 2" class="image" />
+      </div>
+      <div class="image-item">
+        <img src="https://via.placeholder.com/150" alt="Image 3" class="image" />
+      </div>
+      <div class="image-item">
+        <img src="https://via.placeholder.com/150" alt="Image 4" class="image" />
+      </div>
+    </div>
+  </section>
+</body>
+<script src="calc.js"></script>
+</html>
